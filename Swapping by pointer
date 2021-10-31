@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+ 
+
+int main()
+
+{
+
+   int a, b, *p, *p1, temp;
+
+   
+
+    p = &a;
+
+    p1 = &b;
+
+   printf("Enter the value of a and b\n");
+
+   scanf("%d%d", p, p1);
+
+ 
+
+   printf("Before Swapping\n %d,%d\n", *p, *p1);
+
+ 
+
+   
+
+ 
+
+   temp = *p;
+
+   *p = *p1;
+
+   *p1 = temp;
+
+ 
+
+   printf("After Swapping\n%d,%d\n", *p, *p1);
+
+ 
+
+   return 0;
+
+}
